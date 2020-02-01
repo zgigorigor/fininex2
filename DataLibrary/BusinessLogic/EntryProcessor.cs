@@ -29,7 +29,7 @@ namespace DataLibrary.BusinessLogic
         public static List<EntryModel> LoadEntries()
         {
             string sql = @"select Name, Amount, Currency, Description
-                           from dbo.Entry";
+                           from dbo.Entry;";
 
             return SqlDataAccess.LoadData<EntryModel>(sql);
         }
