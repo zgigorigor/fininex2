@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DataLibrary;
+using static DataLibrary.BusinessLogic.EntryProcessor;
 
 namespace fininex2.Controllers
 {
@@ -41,6 +43,7 @@ namespace fininex2.Controllers
         {
             if (ModelState.IsValid)
             {
+                int recordCreated = CreateEntry(model.Name, model.Amount, model.Currency, model.Description);
                 return RedirectToAction("Index");
             }
 
