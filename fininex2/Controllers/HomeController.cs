@@ -16,18 +16,39 @@ namespace fininex2.Controllers
             return View();
         }
 
-        public ActionResult About()
+        //public ActionResult About()
+        //{
+        //    ViewBag.Message = "Your application description page.";
+
+        //    return View();
+        //}
+
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page.";
+
+        //    return View();
+        //}
+
+        public ActionResult ViewEntries()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Entry List";
 
-            return View();
-        }
+            var data = LoadEntries();
+            List<EntryModel> entries = new List<EntryModel>();
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+            foreach (var row in data)
+            {
+                entries.Add(new EntryModel
+                {
+                    Name = row.Name,
+                    Amount = row.Amount,
+                    Currency = row.Currency,
+                    Description = row.Description
+                });
+            }
 
-            return View();
+            return View(entries);
         }
 
         public ActionResult EntryInput()
@@ -44,7 +65,7 @@ namespace fininex2.Controllers
             if (ModelState.IsValid)
             {
                 int recordCreated = CreateEntry(model.Name, model.Amount, model.Currency, model.Description);
-                return RedirectToAction("Index");
+                return RedirectToAction("ViewEntries");
             }
 
             return View();
