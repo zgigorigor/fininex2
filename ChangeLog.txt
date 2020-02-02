@@ -23,3 +23,4 @@ Change log:
                 - can write to database
                 - can view database data
                 - 0.1.0 first testable version
+    20/02/02:   - added "FininexDatabase/*sqlproj.user" ChangeLog

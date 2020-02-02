@@ -1,4 +1,4 @@
 .vs
 bin/
-DataBase/
 obj/
+FininexDatabase/*sqlproj.user
