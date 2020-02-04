@@ -1,0 +1,5 @@
+.vs
+bin/
+obj/
+#FininexDatabase/FininexDatabase.sqlproj.user
+FininexDatabase/*.user

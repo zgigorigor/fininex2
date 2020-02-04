@@ -1,0 +1,31 @@
+Title: Fininex
+Author: Igor Bistrovic
+Company: -
+Project: AutoLife
+Version: 0.1.0
+UpdateNotes: -
+
+Change log: 
+    20/01/31:   - created "README.txt"
+                - created git repository
+                - created ".gitgnore" template:
+                    .vs
+                    bin/
+                    DataBase/
+                    obj/
+    20/01/31:   - initial project setup: 
+                    - 3 projects: 
+                        - DataLibrary (c#)
+                        - fininex2 (mvc)
+                        - FininexDatabase (sql)
+    20/02/01:   - made new git branch "debelop"
+                - created ChangeLog.txt
+                - can write to database
+                - can view database data
+                - 0.1.0 first testable version
+    20/02/02:   - added "FininexDatabase/*sqlproj.user" ChangeLog
+    20/02/04:   - changed Index.cshtml to show app welcome message
+                - added app name in home header
+                - hidden Home button
+                - hidden EntryModel title on Entry Input page
+                - renamed page View Entries to Fininex Database
