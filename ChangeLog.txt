@@ -23,9 +23,13 @@ Change log:
                 - can write to database
                 - can view database data
                 - 0.1.0 first testable version
+<<<<<<< HEAD
     20/02/02:   - added "FininexDatabase/*sqlproj.user" ChangeLog
     20/02/04:   - changed Index.cshtml to show app welcome message
                 - added app name in home header
                 - hidden Home button
                 - hidden EntryModel title on Entry Input page
                 - renamed page View Entries to Fininex Database
+=======
+    20/02/02:   - added "FininexDatabase/*sqlproj.user" ChangeLog
+>>>>>>> 9d52f5197ebd31b43ee951bea4c26320219b7d1e
