@@ -1,4 +1,9 @@
 .vs
 bin/
-DataBase/
 obj/
+<<<<<<< HEAD
+#FininexDatabase/FininexDatabase.sqlproj.user
+FininexDatabase/*.user
+=======
+FininexDatabase/FininexDatabase.sqlproj.user
+>>>>>>> 9d52f5197ebd31b43ee951bea4c26320219b7d1e
