@@ -16,14 +16,11 @@ namespace fininex2.Controllers
             return View();
         }
 
-<<<<<<< HEAD
         public ActionResult FininexHome()
         {
             return View();
         }
 
-=======
->>>>>>> 9d52f5197ebd31b43ee951bea4c26320219b7d1e
         //public ActionResult About()
         //{
         //    ViewBag.Message = "Your application description page.";
